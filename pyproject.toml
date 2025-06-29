@@ -9,10 +9,10 @@ description = "Advanced autonomous vehicle simulation with PyQt5 GUI, AI path pl
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Vision2030", email = "vision2030@example.com"}
+    {name = "sherin joseph roy", email = "sherin.joseph2217@gmail.com"}
 ]
 maintainers = [
-    {name = "Vision2030", email = "vision2030@example.com"}
+    {name = "sherin joseph roy", email = "sherin.joseph2217@gmail.com"}
 ]
 keywords = [
     "autonomous", "vehicle", "simulation", "robotics", "ai", 

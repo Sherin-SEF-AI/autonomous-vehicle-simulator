@@ -20,7 +20,7 @@ setup(
     name="autonomous-vehicle-simulator",
     version="1.0.0",
     author="Sherin Joseph Roy",
-    author_email="sherin.joseph@gmail.com",
+    author_email="sherin.joseph2217@gmail.com",
     description="Advanced autonomous vehicle simulation with PyQt5 GUI, AI path planning, and real-time physics",
     long_description=read_readme(),
     long_description_content_type="text/markdown",

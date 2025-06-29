@@ -6,7 +6,7 @@ Advanced autonomous vehicle simulation with PyQt5 GUI, AI path planning, and rea
 
 __version__ = "1.0.0"
 __author__ = "sherin joseph roy"
-__email__ = "sherin.joseph@gmail.com"
+__email__ = "sherin.joseph2217@gmail.com"
 __description__ = "Advanced autonomous vehicle simulation with PyQt5 GUI, AI path planning, and real-time physics"
 
 # Import main components for easy access
