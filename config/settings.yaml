@@ -1,0 +1,211 @@
+application:
+  auto_save_interval: 300
+  name: Autonomous Vehicle Simulator
+  theme: dark
+  version: 1.0.0
+  window_position:
+  - 100
+  - 100
+  window_size:
+  - 1920
+  - 1350
+gui:
+  central_widget: 3d_viewport
+  default_layout: standard
+  dock_widgets: true
+  panels:
+    control_panel:
+      position: left
+      size:
+      - 250
+      - 600
+      visible: true
+    property_inspector:
+      position: right
+      size:
+      - 300
+      - 400
+      visible: true
+    scene_tree:
+      position: left
+      size:
+      - 250
+      - 300
+      visible: true
+    sensor_data:
+      position: right
+      size:
+      - 300
+      - 400
+      visible: true
+    sensor_panel:
+      visible: true
+    timeline:
+      position: bottom
+      size:
+      - 800
+      - 150
+      visible: true
+  show_menu_bar: true
+  show_statusbar: true
+  show_toolbar: true
+logging:
+  backup_count: 5
+  console_enabled: true
+  file_enabled: true
+  level: INFO
+  max_file_size: 10
+path_planning:
+  a_star:
+    heuristic: euclidean
+  algorithm: rrt
+  goal_tolerance: 0.5
+  grid_resolution: 0.5
+  max_iterations: 1000
+  rrt:
+    goal_bias: 0.1
+    step_size: 1.0
+performance:
+  max_fps: 60
+  memory_limit: 2048
+  multithreading: true
+  target_fps: 30
+  vsync: true
+recording:
+  auto_record: false
+  compression: true
+  enabled: true
+  format: pcd
+  max_file_size: 100
+sensors:
+  camera:
+    enabled: true
+    fov: 60
+    fps: 30
+    noise_enabled: true
+    resolution:
+    - 1920
+    - 1080
+  gps:
+    enabled: true
+    frequency: 1
+    position_noise: 2.0
+    velocity_noise: 0.1
+  imu:
+    accel_noise: 0.1
+    enabled: true
+    frequency: 100
+    gyro_noise: 0.01
+  lidar:
+    enabled: true
+    frequency: 10
+    max_points: 100000
+    noise_std: 0.02
+    range: 100
+    resolution: 0.1
+  radar:
+    angular_resolution: 1.0
+    enabled: true
+    frequency: 20
+    range: 200
+    velocity_resolution: 0.1
+  ultrasonic:
+    beam_angle: 15
+    enabled: true
+    frequency: 10
+    range: 5
+simulation:
+  collision_detection: true
+  max_time: 3600
+  physics:
+    air_resistance: 0.1
+    gravity:
+    - 0
+    - -9.81
+    - 0
+    ground_friction: 0.8
+  physics_enabled: true
+  time_step: 0.016
+  weather:
+    fog_density: 0.0
+    rain_intensity: 0.0
+    snow_intensity: 0.0
+    wind_direction: 0.0
+    wind_speed: 0.0
+  weather_enabled: true
+vehicle:
+  default_type: sedan
+  mass: 1500
+  max_acceleration: 3.0
+  max_deceleration: 8.0
+  max_speed: 30
+  sensors:
+    front_camera:
+      orientation:
+      - 0
+      - 0
+      - 0
+      position:
+      - 0
+      - 1.2
+      - 2.5
+    lidar:
+      orientation:
+      - 0
+      - 0
+      - 0
+      position:
+      - 0
+      - 1.5
+      - 0
+    radar:
+      orientation:
+      - 0
+      - 0
+      - 0
+      position:
+      - 0
+      - 0.8
+      - 2.0
+    ultrasonic:
+      positions:
+        front_left:
+        - 0.8
+        - 0.5
+        - 2.5
+        front_right:
+        - -0.8
+        - 0.5
+        - 2.5
+        rear_left:
+        - 0.8
+        - 0.5
+        - -2.5
+        rear_right:
+        - -0.8
+        - 0.5
+        - -2.5
+  steering_ratio: 16.0
+  track_width: 1.6
+  wheelbase: 2.7
+visualization:
+  antialiasing: true
+  axes_enabled: true
+  background_color:
+  - 0.1
+  - 0.1
+  - 0.15
+  camera:
+    default_distance: 50
+    far_plane: 1000
+    fov: 45
+    max_distance: 1000
+    min_distance: 1
+    near_plane: 0.1
+  grid_enabled: true
+  grid_size: 100
+  grid_spacing: 5
+  lighting_enabled: true
+  renderer: opengl
+  shadows_enabled: true
+  vsync: true
